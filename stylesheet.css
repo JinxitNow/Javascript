@@ -7,3 +7,9 @@ body {
   p {
     color: red;
   }
+
+  .doodle {
+    width:550px;
+    height: auto;
+    margin-left: 15px;
+  }
