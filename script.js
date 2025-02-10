@@ -1,6 +1,5 @@
 $(document).ready(function() {
     $("#header").load("header.html");
-    $("#nav").load("navigation.html");
     $("#content").load("why-planner.html"); // Default content
     $("#footer").load("footer.html");
 
@@ -10,4 +9,3 @@ $(document).ready(function() {
         $("#content").load("testimonials.html");
     });
 });
-
