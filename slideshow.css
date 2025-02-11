@@ -25,15 +25,22 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    transition: transform 0.3s ease-in-out; /* Tilføj en glidende overgang mellem billederne */
+    transition: transform 0.3s ease-in-out; /* Giv en glidende overgang mellem billeder */
 }
 
 .slider__item {
-    min-width: 100%; /* Sørg for, at hver item fylder 100% af containeren */
+    min-width: 100%; /* Sørg for at hver item fylder 100% af containeren */
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0; /* Start med at skjule billederne */
+    transition: opacity 0.5s ease-in-out; /* Tilføj en fade-effekt til billederne */
 }
+
+.slider__item.active {
+    opacity: 1; /* Vis det aktive billede */
+}
+
 
 /* Billedformattering */
 .slider__item img {
@@ -46,24 +53,24 @@ body {
 .slider__prev, .slider__next {
     position: absolute; /* Placer knappen absolut i forhold til containeren */
     top: 50%;
-    transform: translateY(-50%); /* Centrer knappen vertikalt */
+    transform: translateY(-30%); /* Centrer knappen vertikalt */
     background-color: rgb(250, 249, 249); /* Halvtransparent baggrund */
     border: 1px solid #ccc; /* Giv en tynd kant */
-    padding: 10px; /* Gør knapperne lidt større for at skabe plads til pointerne */
+    padding: 10px;
     cursor: pointer;
-    border-radius: 50%; /* Gør knapperne runde */
-    width: 50px; /* Giv knapperne en fast størrelse */
-    height: 50px; /* Giv knapperne en fast størrelse */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
     display: flex; /* Brug flexbox til at centrere indholdet i knappen */
-    justify-content: center; /* Centrer horisontalt */
-    align-items: center; /* Centrer vertikalt */
+    justify-content: center;
+    align-items: center;
 }
 
-/* Centrer pointerne (SVG) i knapperne */
+/* Centrer pointerne- pilene (SVG) i knapperne */
 .slider__prev svg, .slider__next svg {
-    width: 20px; /* Juster størrelsen på pilen */
-    height: 20px; /* Juster størrelsen på pilen */
-    fill: #333; /* Farv pilen mørk for synlighed */
+    width: 20px; 
+    height: 20px;
+    fill: #333;
 }
 
 
