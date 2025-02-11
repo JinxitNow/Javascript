@@ -36,6 +36,7 @@ header {
   font-style: italic;
 }
 
+/* footer*/
 #backToTopBtn {
   position: fixed; 
   bottom: 20px;
@@ -53,7 +54,6 @@ header {
   opacity: 0.8;
 }
 
-/* footer*/
 footer {
 width: 100%;
 background-color: lightgray;
