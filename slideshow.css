@@ -25,11 +25,11 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    transition: transform 0.3s ease-in-out; /* Giv en glidende overgang mellem billeder */
+    transition: transform 0.3s ease-in-out;
 }
 
 .slider__item {
-    min-width: 100%; /* Sørg for at hver item fylder 100% af containeren */
+    min-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,8 +59,8 @@ body {
     padding: 10px;
     cursor: pointer;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: flex; /* Brug flexbox til at centrere indholdet i knappen */
     justify-content: center;
     align-items: center;
@@ -75,9 +75,15 @@ body {
 
 
 .slider__prev {
-    left: 10%; /* Placer knappen lidt til venstre i containeren */
+    left: 5%; /* Placer knappen lidt til venstre i containeren */
 }
 
 .slider__next {
-    right: 10%; /* Placer knappen lidt til højre i containeren */
+    right: 5%; /* Placer knappen lidt til højre i containeren */
+}
+
+.slider__prev:hover, .slider__next:hover {
+    background-color: #ff7b00; /* Skift baggrundsfarve ved hover */
+    transform: translateY(-25%); /* Forstør og roter knappen ved hover */
+    filter: brightness(1.2); /* Øg lysstyrken på knappen */
 }
