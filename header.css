@@ -63,6 +63,19 @@
     position: relative;
 }
 
+.nav-links img {   width: 15px;  /* Juster størrelsen (kan ændres efter behov) */
+    height: auto; /* Beholder proportionerne */
+    max-width: 100%; /* Sikrer responsivitet */
+
+}
+
+/* Gør ikonet mindre på små skærme */
+@media (max-width: 768px) {
+    .nav-links img {
+        width: 20px; /* Mindre størrelse på mobil */
+    }
+}
+
 /* Understregningseffekt ved hover */
 .nav-links a::after {
     content: "";
@@ -79,20 +92,6 @@
 .nav-links a:hover::after {
     width: 100%;
     left: 0;
-}
-
-.navbar li img {
-    width: 24px !important;  /* Sætter en fast bredde */
-    height: auto !important; /* Beholder proportionerne */
-    max-width: 100%;
-    display: block; /* Sikrer korrekt placering */
-}
-
-/* Mindre ikoner på små skærme */
-@media (max-width: 768px) {
-    .navbar li img {
-        width: 20px !important;
-    }
 }
 
 
