@@ -3,61 +3,83 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
+    background: #ffffff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-.logo a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5em;
+.logo img {
+    height: 50px;
 }
 
-.main-nav ul {
+/* Navigation */
+.main-nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
     list-style: none;
     display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
+    gap: 20px;
 }
 
-.main-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
-}
-
-/* Dropdown styling */
-.dropdown {
+.nav-links li {
     position: relative;
 }
 
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+/* Dropdown */
 .dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #444;
-    padding: 10px 0;
-    min-width: 150px;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    min-width: 180px;
     list-style: none;
     border-radius: 5px;
+    padding: 10px 0;
 }
 
 .dropdown-menu li {
-    padding: 5px 15px;
+    padding: 8px 15px;
 }
 
 .dropdown-menu a {
-    color: white;
-    text-decoration: none;
+    color: #333;
     display: block;
 }
 
-/* Dropdown vises, når .open klassen er tilføjet */
-.dropdown.open .dropdown-menu {
+.dropdown:hover .dropdown-menu {
     display: block;
+}
+
+/* Ikoner */
+.nav-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.icon {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
 }
 
 /* Mobilmenu */
@@ -65,39 +87,27 @@
     display: none;
     background: none;
     border: none;
-    color: white;
-    font-size: 1.5em;
+    font-size: 24px;
     cursor: pointer;
 }
 
 @media (max-width: 768px) {
-    .main-nav ul {
+    .nav-links {
         display: none;
         flex-direction: column;
         position: absolute;
+        background: white;
         top: 60px;
-        right: 20px;
-        background-color: #333;
-        padding: 10px;
-        border-radius: 5px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     }
 
-    .menu-btn {
-        display: block;
-    }
-
-    .main-nav.open ul {
+    .nav-links.open {
         display: flex;
     }
 
-    .dropdown-menu {
-        position: static;
-        display: none;
-        background-color: transparent;
-        padding: 0;
-    }
-
-    .dropdown.open .dropdown-menu {
+    .menu-btn {
         display: block;
     }
 }
