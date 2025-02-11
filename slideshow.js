@@ -1,35 +1,19 @@
-// Hent knapperne og billederne
-const prevButton = document.querySelector('.slider__prev');
-const nextButton = document.querySelector('.slider__next');
-const sliderItems = document.querySelectorAll('.slider__item');
-let currentIndex = 0;
+let currentIndex = 0; // Initialiserer den aktuelle billedindeks
+const slides = document.querySelectorAll('.slider__item'); // Finder alle slider-elementer
+const prevButton = document.getElementById('prev'); // Finder knappen til at gå tilbage
+const nextButton = document.getElementById('next'); // Finder knappen til at gå frem
 
-// Skift billede (Next)
-nextButton.addEventListener('click', () => {
-  // Fjern 'active' fra det nuværende billede
-  sliderItems[currentIndex].classList.remove('active');
-  
-  // Øg index (gå til næste billede)
-  currentIndex = (currentIndex + 1) % sliderItems.length;
-  
-  // Tilføj 'active' til det næste billede
-  sliderItems[currentIndex].classList.add('active');
-  
-  // Rul slideren til det næste billede
-  document.querySelector('.slider__items').style.transform = `translateX(-${100 * currentIndex}%)`;
+function showSlide(index) {
+    // Skjul alle slides
+    slides.forEach(slide => slide.style.transform = `translateX(-${index * 100}%)`);
+}
+
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
+    showSlide(currentIndex);
 });
 
-// Skift billede (Previous)
-prevButton.addEventListener('click', () => {
-  // Fjern 'active' fra det nuværende billede
-  sliderItems[currentIndex].classList.remove('active');
-  
-  // Formindsk index (gå til forrige billede)
-  currentIndex = (currentIndex - 1 + sliderItems.length) % sliderItems.length;
-  
-  // Tilføj 'active' til det forrige billede
-  sliderItems[currentIndex].classList.add('active');
-  
-  // Rul slideren til det forrige billede
-  document.querySelector('.slider__items').style.transform = `translateX(-${100 * currentIndex}%)`;
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
+    showSlide(currentIndex);
 });
