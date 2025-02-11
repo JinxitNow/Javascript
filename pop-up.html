@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Popup</title>
+    <title>popup</title>
+    <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-    
+    <!--Popup modal-->
+    <div class="modal" id="discountModal">
+        <div class="modal-content">
+            <span class="close-button" id="closeButton">&times;</span>
+            <h2>UNLOCK 15% OFF YOUR FIRST ORDER!</h2>
+            <p>Begin your journey to maximum productivity! Enter your email address below to unlock your exclusive 15% off discount code.</p>
+            <form id="discountForm">
+                <input type="email" id="emailInput" placeholder="Enter your email" required>
+                <button>GET 15% OFF NOW!</button>
+            </form>
+        </div>
+    </div>
+    <script src="pop-up.js"></script>
 </body>
 </html>
