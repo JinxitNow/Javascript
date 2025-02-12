@@ -47,7 +47,8 @@ header {
     border: none;            
     padding: 0;             
     cursor: pointer;
-    outline: none;           
+    outline: none;
+    z-index: 999;           
 }
 
 #backToTopBtn:hover {
