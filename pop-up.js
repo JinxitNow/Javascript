@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function(){
+
     const modal = document.getElementById('discountModal');
     const closeButton = document.getElementById ('closeButton');
     const form = document.getElementById('discountForm');
@@ -51,4 +51,3 @@ document.addEventListener('DOMContentLoaded', function(){
         closeModal();
 
     });
-});
