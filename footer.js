@@ -5,13 +5,13 @@ document.addEventListener("DOMContentLoaded", function() { //DOMContentLoaded, H
    
         $(document).ready(function() {
             let backToTop = {
-                // Datafelter
+                
                 button: $("#backToTopBtn"),
                 scrollThreshold: 100, // Når man scroller 100px, vises knappen
                 steps: 20, // Antal trin i smooth scroll-effekten, gør at den kører langsomt op (i 20 trins)
                 alertMessages: ["Back to the top!", "See you at the top!", "Back to the top we go!"], // Tilfældige beskeder
             
-                // Funktioner
+                
                 init: function () {
                     let self = this;
             
