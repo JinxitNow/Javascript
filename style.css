@@ -36,32 +36,89 @@ header {
   font-style: italic;
 }
 
+
+/*footer*/
+#backToTopBtn {
+    position: fixed; 
+    bottom: 20px;
+    right: 20px;
+    font-size: 40px;
+    background-color: transparent;  /* Fjern baggrundsfarve */
+    border: none;            
+    padding: 0;             
+    display: none;
+    cursor: pointer;
+    outline: none;           
+}
+
+#backToTopBtn:hover {
+    opacity: 0.8;
+}
+
+/* footer*/
 footer {
-  display: flex;
-  color: white;
   width: 100%;
+  background-color: lightgray;
+  color: black;
+  text-align: center;
+  padding: 20px 0;
 }
 
 .containerfooter {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around; /* Sørger for jævn fordeling */
+  align-items: start;
   width: 100%;
-  height: 150px;
-  background-color: grey;
 }
 
 .columnfooter {
-  flex-direction: column;
-  width: 25%;
-  padding: 20px;
+  width: 100%;
   text-align: center;
 }
 
-.footer hr {
-  border: none;
-  border-top: 1px solid black;
-  margin-bottom: 10px;
+.columnfooter p {
+  margin: 5px 0;
 }
+
+.columnfooter a {
+    color: black;
+    text-decoration: none;
+}
+
+.copyright {
+  text-align: left;
+  margin-top: 15px;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.valutaogimgcontainer {
+    margin: 20px;
+    text-align: left;
+}
+select {
+    padding: 5px;
+    font-size: 16px;
+}
+#selectedCurrency {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.imgfooter {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    float: right;
+    width: 30%;
+}
+
+.imgfooter img {
+    width: 30px;
+    height: 20px;
+    margin: 5px;
+}
+
 
 /* Reset */
 * {
