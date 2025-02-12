@@ -414,9 +414,9 @@ select {
 }
 
 
-/*BANNER*/
+/*BANNER m. animeret tekst*/
 
-/* Container for banneret */
+/* Container for banneret med animeret tekst */
 .banner {
   width: 100%;
   height: 70px;
@@ -478,4 +478,14 @@ select {
   object-fit: cover; /* Sørger for at billedet fylder hele containeren uden at ændre forholdet */
 }
 
+/*Sektion til billed - Reviews */
 
+#new-image {
+  margin-top: 30px; /* Juster værdien for ønsket afstand */
+  text-align: center; /* Hvis du vil centrere billedet horisontalt */
+}
+
+#new-image img {
+  width: 90%; /* Gør billedet responsivt, så det fylder hele bredden */
+  height: auto; /* Beholder billedets proportioner */
+}
