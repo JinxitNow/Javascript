@@ -440,7 +440,7 @@ select {
   white-space: nowrap;
   font-size: 24px;
   color: white;
-  animation: moveText 15s linear infinite;
+  animation: moveText 12s linear infinite;
 }
 
 /* Animationen der flytter teksten fra højre mod venstre */
