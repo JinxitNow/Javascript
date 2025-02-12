@@ -1,5 +1,9 @@
 $(document).ready(function() {
-    $("#header").load("header.html");
+    //$("#header").load("header.html");
+
+$( "#header" ).load( "header.html", function() {
+    $.getScript("header.js")
+  });
     $("#hero").load("hero.html"); 
     $("#products").load("products.html"); 
     $("#slideshow").load("slideshow.html"); 

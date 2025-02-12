@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
+
+    alert()
     const navLinks = document.querySelector(".nav-links");
 
     // Menu data
@@ -64,4 +65,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Generer menu ved load
     generateMenu();
-});
