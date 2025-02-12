@@ -46,7 +46,6 @@ header {
     background-color: transparent;  /* Fjern baggrundsfarve */
     border: none;            
     padding: 0;             
-    display: none;
     cursor: pointer;
     outline: none;           
 }
