@@ -1,5 +1,5 @@
 
-const navLinks = document.querySelector(".nav-links");
+const navLinks = document.querySelector(".nav-links"); //laver at nav kan sees somehow
 
     // Menu data
     const menuItems = [
