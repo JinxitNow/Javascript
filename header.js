@@ -9,17 +9,19 @@ document.addEventListener("DOMContentLoaded", () => {
             { name: "Panda Pro - 6 Month Daily Planner", link: "#" },
             { name: "Panda Planner - 12 Month Weekly Planner", link: "#" }
         ] },
-        { name: "More Products", link: "#", dropdown: [
-            { name: "Vores team", link: "#" },
-            { name: "Historie", link: "#" },
-            { name: "Vores team", link: "#" },
-            { name: "Historie", link: "#" }
-        ]},
         { name: "Planners", link: "#", dropdown: [
-            { name: "Vores team", link: "#" },
-            { name: "Historie", link: "#" },
-            { name: "Vores team", link: "#" },
-            { name: "Historie", link: "#" }
+            { name: "Classic Productivity Planners", link: "#" },
+            { name: "Business Planners", link: "#" },
+            { name: "Diet & Fitness Planners", link: "#" },
+            { name: "Student Planners", link: "#" }
+        ]},
+        { name: "More Products", link: "#", dropdown: [
+            { name: "Bundles", link: "#" },
+            { name: "Password Keeper", link: "#" },
+            { name: "Apparel", link: "#" },
+            { name: "Accessories", link: "#" },
+            { name: "Digital Course", link: "#" },
+            { name: "Gift Card", link: "#" }
         ]},
         { name: "About Us", link: "#" }
     ];
