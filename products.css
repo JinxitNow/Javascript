@@ -30,6 +30,10 @@ body {
     transform: scale(1.05);
 }
 
+.product h3 {
+    font-size: 15px; /* Ændrer størrelsen på teksten i h3 indenfor .product */
+}
+
 /* Product Images */
 .product img {
     width: 100%;
