@@ -23,7 +23,7 @@ const navLinks = document.querySelector(".nav-links"); //laver at nav kan sees s
             { name: "Digital Course", link: "#" },
             { name: "Gift Card", link: "#" }
         ]},
-        { name: "About Us", link: "#" }
+        { name: "About Us", link: "about.html" }
     ];
 
     function generateMenu() {

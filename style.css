@@ -1,5 +1,5 @@
 
-/* Sticky header */
+/* Header */
 .main-header {
   position: sticky;
   top: 0;
@@ -20,11 +20,12 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .logo img {
-  height: 50px;
+  height: 30px;
 }
 
 /* Navigation centreret */
@@ -513,4 +514,28 @@ select {
 #video-section iframe {
   max-width: 100%; /* Sørger for at iframe (YouTube-videoen) fylder bredden */
   height: auto; /* Bevarer proportionerne */
+}
+
+/*about section*/
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+.about-content-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.about-text {
+  width: 50%;
+  padding: 20px;
+  align-self: center;
+}
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  align-self: center;
 }
