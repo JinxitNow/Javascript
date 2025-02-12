@@ -212,3 +212,84 @@ nav {
 }
 
 
+
+.slider-container {
+  position: relative; /* Gør containeren til reference for de absolut placerede knapper */
+  margin-left: 165px;
+  display: flex;
+  width: 500px; 
+  justify-content: center; 
+  align-items: center; 
+  height: 600px; 
+  background-color: lightgrey; 
+  overflow: hidden; /* Skjul indhold uden for containeren */
+}
+
+/* Styling for slider items */
+.slider__items {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider__item {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Start med at skjule billederne */
+  transition: opacity 0.5s ease-in-out; /* Tilføj en fade-effekt til billederne */
+}
+
+.slider__item.active {
+  opacity: 1; /* Vis det aktive billede */
+}
+
+
+/* Billedformattering */
+.slider__item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Sørg for at billedet fylder containeren uden at blive strakt */
+}
+
+/* Styling for knapperne */
+.slider__prev, .slider__next {
+  position: absolute; /* Placer knappen absolut i forhold til containeren */
+  top: 50%;
+  transform: translateY(-30%); /* Centrer knappen vertikalt */
+  background-color: rgb(250, 249, 249); /* Halvtransparent baggrund */
+  border: 1px solid #ccc; /* Giv en tynd kant */
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex; /* Brug flexbox til at centrere indholdet i knappen */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centrer pointerne- pilene (SVG) i knapperne */
+.slider__prev svg, .slider__next svg {
+  width: 20px; 
+  height: 20px;
+  fill: #333;
+}
+
+
+.slider__prev {
+  left: 5%; /* Placer knappen lidt til venstre i containeren */
+}
+
+.slider__next {
+  right: 5%; /* Placer knappen lidt til højre i containeren */
+}
+
+.slider__prev:hover, .slider__next:hover {
+  background-color: #ff7b00; /* Skift baggrundsfarve ved hover */
+  transform: translateY(-25%); /* Forstør og roter knappen ved hover */
+  filter: brightness(1.2); /* Øg lysstyrken på knappen */
+}

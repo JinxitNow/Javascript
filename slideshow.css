@@ -1,15 +1,7 @@
-/* Grundlæggende styling for container */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    margin-left: 165px;
-    background-color: lightgrey;
-    width: 500px;
-    height: 600px;
-}
 
 .slider-container {
     position: relative; /* Gør containeren til reference for de absolut placerede knapper */
+    margin-left: 165px;
     display: flex;
     width: 500px; 
     justify-content: center; 
