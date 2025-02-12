@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-bottom: 10px; /* Afstand mellem logo og navigation */
+    margin-bottom: 10px;
 }
 
 .logo img {
@@ -54,28 +54,6 @@
     padding: 10px;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 10px;
-    position: relative;
-}
-
-.nav-links img {   width: 15px;  /* Juster størrelsen (kan ændres efter behov) */
-    height: auto; /* Beholder proportionerne */
-    max-width: 100%; /* Sikrer responsivitet */
-
-}
-
-/* Gør ikonet mindre på små skærme */
-@media (max-width: 768px) {
-    .nav-links img {
-        width: 20px; /* Mindre størrelse på mobil */
-    }
-}
-
 /* Understregningseffekt ved hover */
 .nav-links a::after {
     content: "";
@@ -88,14 +66,12 @@
     transition: width 0.3s ease, left 0.3s ease;
 }
 
-/* Når man hover */
 .nav-links a:hover::after {
     width: 100%;
     left: 0;
 }
 
-
-/* Dropdown */
+/* Dropdown-menu styling */
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -104,7 +80,6 @@
     transform: translateX(-50%);
     background: white;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    max-width: 100%;
     min-width: 180px;
     list-style: none;
     border-radius: 5px;
@@ -121,25 +96,7 @@
     display: block;
 }
 
+/* Når dropdown er åben */
 .dropdown:hover .dropdown-menu {
     display: block;
-}
-
-/* Mobilvenlig styling */
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        display: none;
-    }
-
-    .nav-links.open {
-        display: flex;
-    }
-
-    .dropdown-menu {
-        position: static;
-        transform: none;
-        width: 100%;
-        text-align: left;
-    }
 }
