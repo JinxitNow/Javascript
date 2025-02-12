@@ -106,7 +106,7 @@
 /*footer*/
 #backToTopBtn {
     position: fixed; 
-    bottom: 20px;
+    bottom: 30px; 
     right: 20px;
     font-size: 40px;
     background-color: transparent;  /* Fjern baggrundsfarve */
