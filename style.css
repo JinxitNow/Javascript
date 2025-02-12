@@ -426,24 +426,32 @@ select {
   position: relative;
 }
 
+.banner {
+  margin-bottom: 40px; /* Juster afstanden til den ønskede værdi */
+}
+
+
 /* Tekst, der skal animeres */
 .moving-text {
   position: absolute;
+  top: 30%; /* Centrer teksten vertikalt */
+  right: 0; /* Start teksten fra højre kant */
   white-space: nowrap; 
-  font-size: 20px;
+  font-size: 24px;
   color: white;
-  animation: moveText 25s linear infinite; /* Animering af teksten */
+  animation: moveText 15s linear infinite; /* Animering af teksten */
 }
 
 /* Animationen der flytter teksten fra højre mod venstre */
 @keyframes moveText {
   0% {
-    transform: translateX(100%); /* Starter tekst fra højre */
+    transform: translateX(100%); /* Starter tekst fra højre uden for skærmen */
   }
   100% {
-    transform: translateX(-100%); /* Slutter tekst på venstre side */
+    transform: translateX(-500%); /* Slutter tekst på venstre side uden for skærmen */
   }
 }
+
 
 /*Top Banner*/
 .bannertop {
@@ -471,7 +479,3 @@ select {
 }
 
 
-/* Øg afstanden mellem main og footer */
-main {
-    margin-bottom: 40px; /* Juster afstanden til den ønskede værdi */
-}
