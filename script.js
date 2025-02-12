@@ -1,6 +1,9 @@
 $(document).ready(function() {
     //$("#header").load("header.html");
 
+$( "#pop-up" ).load( "pop-up.html", function() {
+    $.getScript("pop-up.js")
+    });
 $( "#header" ).load( "header.html", function() {
     $.getScript("header.js")
   });
@@ -12,9 +15,6 @@ $( "#header" ).load( "header.html", function() {
   });
   $( "#slideshow" ).load( "slideshow.html", function() {
     $.getScript("slideshow.js")
-  });
-  $( "#pop-up" ).load( "pop-up.html", function() {
-    $.getScript("pop-up.js")
   });
   $( "#footer" ).load( "footer.html", function() {
     $.getScript("footer.js")
