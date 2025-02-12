@@ -461,7 +461,15 @@ select {
   overflow: hidden;
   background-color: #040403;
   padding: 20px;
-  position: relative;
+  display: flex;
+ align-items: center;
+ justify-content: left;
+}
+.title {
+  color: white;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
 
 
@@ -480,7 +488,6 @@ select {
 }
 
 /*Sektion til billed - Reviews */
-
 #new-image {
   margin-top: 30px;
   text-align: center;
@@ -489,4 +496,21 @@ select {
 #new-image img {
   width: 90%;
   height: auto;
+}
+
+
+/*Sektion til video */
+#video-section {
+  margin: 40px 0; /* Giver afstand over og under videoen */
+  text-align: center; /* Centrerer videoen */
+}
+
+#video-section video {
+  max-width: 100%; /* Sikrer at videoen ikke overskrider skærmens bredde */
+  height: auto; /* Beholder videoens proportioner */
+}
+
+#video-section iframe {
+  max-width: 100%; /* Sørger for at iframe (YouTube-videoen) fylder bredden */
+  height: auto; /* Bevarer proportionerne */
 }
