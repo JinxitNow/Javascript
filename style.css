@@ -1,39 +1,105 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
+
+/* Sticky header */
+.main-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Logo centreret */
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+/* Navigation centreret */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
   padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+/* Understregningseffekt ved hover */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Dropdown-menu styling */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  min-width: 180px;
+  list-style: none;
+  border-radius: 5px;
+  padding: 10px 0;
   text-align: center;
 }
-.container {
-  width: 100%;
-  margin: auto;
-  padding: 20px;
+
+.dropdown-menu li {
+  padding: 8px 15px;
 }
-header {
-  background: #f4f4f4;
-  padding: 50px 0;
+
+.dropdown-menu a {
+  color: #333;
+  display: block;
 }
-.cta-button {
-  display: inline-block;
-  background: #ff9900;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-.why-planner, .testimonials {
-  padding: 50px 0;
-}
-.features {
-  display: flex;
-  justify-content: space-around;
-}
-.feature {
-  width: 30%;
-}
-.testimonials .testimonial {
-  margin: 20px 0;
-  font-style: italic;
+
+/* Når dropdown er åben */
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 
@@ -139,79 +205,6 @@ select {
   justify-content: space-between;
   padding: 5px 20px;
 }
-
-/* Header */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 20px;
-  background: white;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.logo img {
-  height: 30px;
-}
-
-nav {
-  flex-grow: 1;
-  text-align: center;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.nav-links li {
-  position: relative;
-  padding: 10px 0;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-}
-
-/* Dropdown menu */
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 35px;
-  left: 0;
-  background: white;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  width: 200px;
-  padding: 10px 0;
-  z-index: 1000;
-}
-
-.dropdown-menu li {
-  padding: 10px;
-}
-
-.dropdown-menu li a {
-  color: black;
-  display: block;
-  width: 100%;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-/* Ikoner */
-.icons {
-  display: flex;
-  gap: 15px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
 
 /* SLIDESHOW - BILLEDGALLERI */
 .slider-container {

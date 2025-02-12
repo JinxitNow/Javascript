@@ -7,6 +7,9 @@ $( "#pop-up" ).load( "pop-up.html", function() {
 $( "#header" ).load( "header.html", function() {
     $.getScript("header.js")
   });
+  $( "#pop-up" ).load( "pop-up.html", function() {
+    $.getScript("pop-up.js")
+    });
   $( "#hero" ).load( "hero.html", function() {
     $.getScript("hero.js")
   });
