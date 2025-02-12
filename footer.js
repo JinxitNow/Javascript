@@ -4,6 +4,8 @@
    
         $(document).ready(function() {
             let backToTop = {
+
+
                 
                 button: $("#backToTopBtn"),
                 scrollThreshold: 100, // Når man scroller 100px, vises knappen
