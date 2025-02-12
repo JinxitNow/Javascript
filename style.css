@@ -214,6 +214,7 @@ select {
   align-items: right;
   width: 80%; /* Fylder hele bredden */
   margin-top: 20px; /* Juster afstanden mellem sektionerne */
+  margin-left: 60px;
 }
 
 /* Slideshow */
@@ -420,7 +421,7 @@ select {
 .banner {
   width: 100%;
   height: 70px;
-  overflow: hidden; 
+  overflow: hidden;
   background-color: #ff9900;
   padding: 20px;
   position: relative;
@@ -434,12 +435,12 @@ select {
 /* Tekst, der skal animeres */
 .moving-text {
   position: absolute;
-  top: 30%; /* Centrer teksten vertikalt */
-  right: 0; /* Start teksten fra højre kant */
-  white-space: nowrap; 
+  top: 30%;
+  right: 0;
+  white-space: nowrap;
   font-size: 24px;
   color: white;
-  animation: moveText 15s linear infinite; /* Animering af teksten */
+  animation: moveText 15s linear infinite;
 }
 
 /* Animationen der flytter teksten fra højre mod venstre */
@@ -457,7 +458,7 @@ select {
 .bannertop {
   width: 100%;
   height: 5px;
-  overflow: hidden; 
+  overflow: hidden;
   background-color: #040403;
   padding: 20px;
   position: relative;
@@ -468,24 +469,24 @@ select {
 /* Sektion til billede - Everydayclassicplanner */
 #image-banner {
   width: 100%;
-  height: 600px; 
+  height: 600px;
   overflow: hidden;
 }
 
 #image-banner img {
-  width: 100%; /* Gør billedet responsivt og fylder hele containeren */
-  height: 100%; /* Sørger for at billedet dækker hele højden */
-  object-fit: cover; /* Sørger for at billedet fylder hele containeren uden at ændre forholdet */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*Sektion til billed - Reviews */
 
 #new-image {
-  margin-top: 30px; /* Juster værdien for ønsket afstand */
-  text-align: center; /* Hvis du vil centrere billedet horisontalt */
+  margin-top: 30px;
+  text-align: center;
 }
 
 #new-image img {
-  width: 90%; /* Gør billedet responsivt, så det fylder hele bredden */
-  height: auto; /* Beholder billedets proportioner */
+  width: 90%;
+  height: auto;
 }
