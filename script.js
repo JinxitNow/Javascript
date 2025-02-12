@@ -1,6 +1,9 @@
 $(document).ready(function() {
     $("#header").load("header.html");
-    $("#content").load("why-planner.html"); // Default content
+    $("#hero").load("hero.html"); 
+    $("#products").load("products.html"); 
+    $("#slideshow").load("slideshow.html"); 
+    $("#pop-up").load("popup.html"); 
     $("#footer").load("footer.html");
 });
 
