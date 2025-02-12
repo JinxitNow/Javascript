@@ -1,7 +1,4 @@
 
-    alert()
-    const navLinks = document.querySelector(".nav-links");
-
     // Menu data
     const menuItems = [
         { name: "New Arrivals", link: "#" },
