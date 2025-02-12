@@ -1,9 +1,7 @@
 $(document).ready(function() {
     //$("#header").load("header.html");
 
-$( "#pop-up" ).load( "pop-up.html", function() {
-    $.getScript("pop-up.js")
-    });
+
 $( "#header" ).load( "header.html", function() {
     $.getScript("header.js")
   });
