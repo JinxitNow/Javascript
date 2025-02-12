@@ -207,6 +207,35 @@ select {
 }
 
 /* SLIDESHOW - BILLEDGALLERI */
+/* Container for slideshow og billede */
+#media-container {
+  display: flex; /* Brug Flexbox for at placere elementerne ved siden af hinanden */
+  justify-content: space-between; /* Sørger for, at slideshow og billede har afstand */
+  align-items: right;
+  width: 80%; /* Fylder hele bredden */
+  margin-top: 20px; /* Juster afstanden mellem sektionerne */
+}
+
+/* Slideshow */
+#slideshow {
+  width: 70%; /* Slideshowet tager 70% af bredden */
+  height: 400px; /* Juster højden af slideshowet */
+  background-color: #f4f4f4; /* Giv slideshowet en baggrundsfarve (kan ændres) */
+}
+
+/* Billede */
+#image-banner {
+  width: 28%; /* Billedet tager 28% af bredden */
+  height: 300px; /* Juster højden af billedet */
+}
+
+#image-banner img {
+  width: 80%; /* Gør billedet responsivt */
+  height: 80%; /* Fylder hele højden af containeren */
+  object-fit: cover; /* Sørger for at billedet fylder containeren uden forvrængning */
+}
+
+
 .slider-container {
   position: relative; /* Gør containeren til reference for de absolut placerede knapper */
   margin-left: 165px;
