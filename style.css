@@ -473,5 +473,5 @@ select {
 
 /* Øg afstanden mellem main og footer */
 main {
-  margin-bottom: 40px; /* Juster afstanden til den ønskede værdi */
+    margin-bottom: 40px; /* Juster afstanden til den ønskede værdi */
 }
