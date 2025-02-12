@@ -390,8 +390,9 @@ select {
 /* Container for banneret */
 .banner {
   width: 100%;
-  overflow: hidden; /* Skjuler teksten, når den er udenfor containeren */
-  background-color: #ff9900; /* Baggrundsfarve for banneret */
+  height: 70px;
+  overflow: hidden; 
+  background-color: #ff9900;
   padding: 20px;
   position: relative;
 }
