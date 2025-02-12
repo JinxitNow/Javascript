@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() { //DOMContentLoaded, Hvis JavaScript-koden kører, før HTML'en er klar, vil button være null, fordi browseren ikke har indlæst elementet endnu.
 
     let script = document.createElement("script");
     script.onload = function() {
@@ -58,5 +57,4 @@ document.addEventListener("DOMContentLoaded", function() { //DOMContentLoaded, H
         });
     });
     document.head.appendChild(script);
-});
 
