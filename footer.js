@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() { //DOMContentLoaded, Hvis JavaScript-koden kører, før HTML'en er klar, vil button være null, fordi browseren ikke har indlæst elementet endnu.
 
     let script = document.createElement("script");
-    script.src = "https://code.jquery.com/jquery-3.6.0.min.js";
     script.onload = function() {
    
         $(document).ready(function() {
