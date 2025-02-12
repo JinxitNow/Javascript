@@ -391,3 +391,32 @@ nav {
   }
 }
 
+
+*/BANNER*/
+/* Container for banneret */
+.banner {
+  width: 100%; /* Gør banneret 100% af bredden */
+  overflow: hidden; /* Skjuler teksten, når den er udenfor containeren */
+  background-color: #ff9900; /* Baggrundsfarve for banneret */
+  padding: 20px;
+  position: relative;
+}
+
+/* Tekst, der skal animeres */
+.moving-text {
+  position: absolute;
+  white-space: nowrap; /* Sørger for, at teksten ikke brydes over flere linjer */
+  font-size: 24px; /* Ændre skrifttype størrelse efter behov */
+  color: white; /* Ændre farve på teksten */
+  animation: moveText 10s linear infinite; /* Animering af teksten */
+}
+
+/* Animationen der flytter teksten fra højre mod venstre */
+@keyframes moveText {
+  0% {
+    transform: translateX(100%); /* Starter tekst fra højre */
+  }
+  100% {
+    transform: translateX(-100%); /* Slutter tekst på venstre side */
+  }
+}
