@@ -469,3 +469,9 @@ select {
   height: 100%; /* Sørger for at billedet dækker hele højden */
   object-fit: cover; /* Sørger for at billedet fylder hele containeren uden at ændre forholdet */
 }
+
+
+/* Øg afstanden mellem main og footer */
+main {
+  margin-bottom: 40px; /* Juster afstanden til den ønskede værdi */
+}
