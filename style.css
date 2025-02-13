@@ -129,6 +129,7 @@ footer {
   color: black;
   text-align: center;
   padding: 5px 0;
+  height: 500px;
 }
 
 .containerfooter {
@@ -136,6 +137,7 @@ footer {
   justify-content: space-around; 
   align-items: start;
   width: 100%;
+  margin-top: 40px;
 }
 
 .columnfooter {
@@ -155,7 +157,7 @@ footer {
 .copyright {
   display: flex;
   text-align: left;
-  margin-top: 5px;
+  margin-top: 0;
   padding-left: 20px;
   font-size: 14px;
 }
