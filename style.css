@@ -133,7 +133,7 @@ footer {
 
 .containerfooter {
   display: flex;
-  justify-content: space-around; /* Sørger for jævn fordeling */
+  justify-content: space-around; 
   align-items: start;
   width: 100%;
 }
@@ -144,7 +144,7 @@ footer {
 }
 
 .columnfooter p {
-  margin: 5px 0;
+  margin: 20px 0;
 }
 
 .columnfooter a {
@@ -153,6 +153,8 @@ footer {
 }
 
 .copyright {
+  display: flex;
+  justify-content: center;
   text-align: left;
   margin-top: 15px;
   padding-left: 20px;
@@ -160,15 +162,15 @@ footer {
 }
 
 .valutaogimgcontainer {
-    margin: 20px;
+    margin: 8%;
     text-align: left;
 }
 select {
-    padding: 5px;
+    padding: 10px;
     font-size: 16px;
 }
 #selectedCurrency {
-    margin-top: 10px;
+    margin-top: 20px;
     font-weight: bold;
 }
 
