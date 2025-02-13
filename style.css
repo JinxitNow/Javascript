@@ -211,25 +211,25 @@ select {
 /* SLIDESHOW - BILLEDGALLERI */
 /* Container for slideshow og billede */
 #media-container {
-  display: flex; /* Brug Flexbox for at placere elementerne ved siden af hinanden */
-  justify-content: space-between; /* Sørger for, at slideshow og billede har afstand */
+  display: flex;
+  justify-content: space-between;
   align-items: right;
-  width: 80%; /* Fylder hele bredden */
-  margin-top: 20px; /* Juster afstanden mellem sektionerne */
+  width: 80%;
+  margin-top: 20px;
   margin-left: 60px;
 }
 
 /* Slideshow */
 #slideshow {
-  width: 70%; /* Slideshowet tager 70% af bredden */
-  height: 400px; /* Juster højden af slideshowet */
-  background-color: #f4f4f4; /* Giv slideshowet en baggrundsfarve (kan ændres) */
+  width: 70%;
+  height: 400px;
+  background-color: #f4f4f4;
 }
 
 /* Billede */
 #image-banner {
-  width: 28%; /* Billedet tager 28% af bredden */
-  height: 300px; /* Juster højden af billedet */
+  width: 28%;
+  height: 300px;
 }
 
 #image-banner img {
@@ -238,9 +238,8 @@ select {
   object-fit: cover;
 }
 
-
 .slider-container {
-  position: relative; /* Gør containeren til reference for de absolut placerede knapper */
+  position: relative;
   margin-left: 165px;
   display: flex;
   width: 500px; 
@@ -248,7 +247,7 @@ select {
   align-items: center; 
   height: 600px; 
   background-color: lightgrey; 
-  overflow: hidden; /* Skjul indhold uden for containeren */
+  overflow: hidden;
 }
 
 /* Styling for slider items */
@@ -265,12 +264,12 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0; /* Start med at skjule billederne */
-  transition: opacity 0.5s ease-in-out; /* Tilføj en fade-effekt til billederne */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .slider__item.active {
-  opacity: 1; /* Vis det aktive billede */
+  opacity: 1;
 }
 
 
@@ -278,22 +277,22 @@ select {
 .slider__item img {
   width: 100%;
   height: auto;
-  object-fit: cover; /* Sørg for at billedet fylder containeren uden at blive strakt */
+  object-fit: cover;
 }
 
 /* Styling for knapperne */
 .slider__prev, .slider__next {
-  position: absolute; /* Placer knappen absolut i forhold til containeren */
+  position: absolute;
   top: 50%;
-  transform: translateY(-30%); /* Centrer knappen vertikalt */
-  background-color: rgb(250, 249, 249); /* Halvtransparent baggrund */
-  border: 1px solid #ccc; /* Giv en tynd kant */
+  transform: translateY(-30%);
+  background-color: rgb(250, 249, 249);
+  border: 1px solid #ccc;
   padding: 10px;
   cursor: pointer;
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  display: flex; /* Brug flexbox til at centrere indholdet i knappen */
+  display: flex; 
   justify-content: center;
   align-items: center;
 }
@@ -305,19 +304,19 @@ select {
   fill: #333;
 }
 
-
+/*Placering af knapper i containeren og hoover inkl. hoover */
 .slider__prev {
-  left: 5%; /* Placer knappen lidt til venstre i containeren */
+  left: 5%;
 }
 
 .slider__next {
-  right: 5%; /* Placer knappen lidt til højre i containeren */
+  right: 5%;
 }
 
 .slider__prev:hover, .slider__next:hover {
-  background-color: #ff7b00; /* Skift baggrundsfarve ved hover */
-  transform: translateY(-25%); /* Forstør og roter knappen ved hover */
-  filter: brightness(1.2); /* Øg lysstyrken på knappen */
+  background-color: #ff7b00;
+  transform: translateY(-25%);
+  filter: brightness(1.2);
 }
 
 /*popup*/
@@ -418,7 +417,6 @@ select {
 
 
 /*BANNER m. animeret tekst*/
-
 /* Container for banneret med animeret tekst */
 .banner {
   width: 100%;
@@ -489,6 +487,8 @@ select {
   object-fit: cover;
 }
 
+
+
 /*Sektion til billed - Reviews */
 #new-image {
   margin-top: 30px;
@@ -501,21 +501,24 @@ select {
 }
 
 
+
 /*Sektion til video */
 #video-section {
-  margin: 40px 0; /* Giver afstand over og under videoen */
-  text-align: center; /* Centrerer videoen */
+  margin: 40px 0;
+  text-align: center;
 }
 
 #video-section video {
-  max-width: 100%; /* Sikrer at videoen ikke overskrider skærmens bredde */
-  height: auto; /* Beholder videoens proportioner */
+  max-width: 100%;
+  height: auto;
 }
 
 #video-section iframe {
-  max-width: 100%; /* Sørger for at iframe (YouTube-videoen) fylder bredden */
-  height: auto; /* Bevarer proportionerne */
+  max-width: 100%;
+  height: auto;
 }
+
+
 
 /*about section*/
 .about-container {
