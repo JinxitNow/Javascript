@@ -100,3 +100,10 @@
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
+/*Søgefunktion-container */
+.search-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
