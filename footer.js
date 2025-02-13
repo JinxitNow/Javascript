@@ -5,27 +5,25 @@ $(document).ready(function() {
         steps: 20, // Antal trin i smooth scroll-effekten
         alertMessages: ["Back to the top!", "See you at the top!", "Back to the top we go!"], // Tilfældige beskeder
     
-        init: function () {
-            let self = this;
-    
-            $(window).on("scroll", function() {
-                if ($(document).scrollTop() > self.scrollThreshold) {
-                    self.button.show();
+        init() {
+            $(window).on("scroll", () => {
+                if ($(document).scrollTop() > this.scrollThreshold) {
+                    this.button.show();
                 } else {
-                    self.button.hide();
+                    this.button.hide();
                 }
             });
-    
-            this.button.on("click", function() {
-                let messageIndex = Math.floor(Math.random() * self.alertMessages.length);
-                alert(self.alertMessages[messageIndex]);
-                self.smoothScrollToTop();
+
+            this.button.on("click", () => {
+                const messageIndex = Math.floor(Math.random() * this.alertMessages.length);
+                alert(this.alertMessages[messageIndex]);
+                this.smoothScrollToTop();
             });
         },
     
-        smoothScrollToTop: function () {
+        smoothScrollToTop() {
             let position = $(document).scrollTop();
-            let step = position / this.steps;
+            const step = position / this.steps; 
     
             let interval = setInterval(() => {
                 if (position > 0) {
@@ -42,8 +40,8 @@ $(document).ready(function() {
     backToTop.init();
 
     // Drop down i footeren
-    $("#valuta").change(function() {
-        var selected = $("#valuta option:selected").text();
+    $("#valuta").change(() => {
+        const selected = $("#valuta option:selected").text();
         $("#selectedCurrency").text("Valgt valuta: " + selected);
     });
 });
