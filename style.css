@@ -128,16 +128,14 @@ footer {
   background-color: lightgray;
   color: black;
   text-align: center;
-  padding: 5px 0;
-  height: 500px;
+  padding: 20px 0;
 }
 
 .containerfooter {
   display: flex;
-  justify-content: space-around; 
+  justify-content: space-around; /* Sørger for jævn fordeling */
   align-items: start;
   width: 100%;
-  margin-top: 40px;
 }
 
 .columnfooter {
@@ -146,7 +144,7 @@ footer {
 }
 
 .columnfooter p {
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .columnfooter a {
@@ -155,15 +153,14 @@ footer {
 }
 
 .copyright {
-  display: flex;
   text-align: left;
-  margin-top: 0;
+  margin-top: 15px;
   padding-left: 20px;
   font-size: 14px;
 }
 
 .valutaogimgcontainer {
-    margin: 8%;
+    margin: 20px;
     text-align: left;
 }
 select {
@@ -171,7 +168,7 @@ select {
     font-size: 16px;
 }
 #selectedCurrency {
-    margin-top: 20px;
+    margin-top: 10px;
     font-weight: bold;
 }
 
@@ -236,7 +233,7 @@ select {
 
 #image-banner img {
   width: 75%;
-  height: 75%;
+  height: 80%;
   object-fit: cover;
 }
 
