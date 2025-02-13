@@ -232,9 +232,9 @@ select {
 }
 
 #image-banner img {
-  width: 80%; /* Gør billedet responsivt */
-  height: 80%; /* Fylder hele højden af containeren */
-  object-fit: cover; /* Sørger for at billedet fylder containeren uden forvrængning */
+  width: 75%;
+  height: 75%;
+  object-fit: cover;
 }
 
 
